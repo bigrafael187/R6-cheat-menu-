@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{7dcd4386-8fb4-426f-a873-d1299eb9abe7}</ProjectGuid>
+    <RootNamespace>UnknownLoader</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Entry\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Entry\Info\$(Configuration)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include;$(SolutionDir)Source\Resources\ImGui\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)Source\Resources\ImGui\Libs</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Entry\</OutDir>
+    <IntDir>$(SolutionDir)Entry\Info\$(Configuration)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include;$(SolutionDir)Source\Resources\ImGui\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)Source\Resources\ImGui\Libs</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Core\Inject\Inject.cc" />
+    <ClCompile Include="Source\Core\Menu\CustomImGui\CustomImGui.cc" />
+    <ClCompile Include="Source\Core\Menu\Menu.cc" />
+    <ClCompile Include="Source\DllMain.cc" />
+    <ClCompile Include="Source\Resources\ImGui\Draw.cc" />
+    <ClCompile Include="Source\Resources\ImGui\FreeType.cc" />
+    <ClCompile Include="Source\Resources\ImGui\ImGui.cc" />
+    <ClCompile Include="Source\Resources\ImGui\Others\DX9\Impl_DX9.cc" />
+    <ClCompile Include="Source\Resources\ImGui\Others\StdLib\StdLib.cc" />
+    <ClCompile Include="Source\Resources\ImGui\Others\Win32\Impl_Win32.cc" />
+    <ClCompile Include="Source\Resources\ImGui\Tables.cc" />
+    <ClCompile Include="Source\Resources\ImGui\Widgets.cc" />
+    <ClCompile Include="Source\Utilities\Utilities.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Core\Inject\Inject.hh" />
+    <ClInclude Include="Source\Core\Menu\CustomImGui\CustomImGui.hh" />
+    <ClInclude Include="Source\Core\Menu\Menu.hh" />
+    <ClInclude Include="Source\DllMain.hh" />
+    <ClInclude Include="Source\Includes.hh" />
+    <ClInclude Include="Source\Resources\ImGui\FreeType.hh" />
+    <ClInclude Include="Source\Resources\ImGui\ImConfig.hh" />
+    <ClInclude Include="Source\Resources\ImGui\ImGui.hh" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Config\ftconfig.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Config\ftheader.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Config\ftmodule.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Config\ftoption.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Config\ftstdlib.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\freetype.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftadvanc.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftbbox.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftbdf.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftbitmap.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftbzip2.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftcache.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftchapters.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftcid.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftcolor.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftdriver.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\fterrdef.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\fterrors.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftfntfmt.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftgasp.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftglyph.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftgxval.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftgzip.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftimage.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftincrem.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftlcdfil.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftlist.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftlzw.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftmac.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftmm.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftmodapi.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftmoderr.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftotval.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftoutln.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftparams.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftpfr.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftrender.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftsizes.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftsnames.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftstroke.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftsynth.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftsystem.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\fttrigon.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\fttypes.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftwinfnt.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\autohint.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\cffotypes.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\cfftypes.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftcalc.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftdebug.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftdrv.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftgloadr.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\fthash.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftmemory.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftobjs.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftpsprop.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftrfork.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftserv.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftstream.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\fttrace.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftvalid.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\internal.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\psaux.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\pshints.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svbdf.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svcfftl.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svcid.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svfntfmt.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svgldict.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svgxval.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svkern.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svmetric.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svmm.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svotval.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svpfr.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svpostnm.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svprop.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svpscmap.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svpsinfo.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svsfnt.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svttcmap.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svtteng.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svttglyf.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svwinfnt.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\sfnt.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\t1types.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\tttypes.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\wofftypes.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\t1tables.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ttnameid.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\tttables.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\tttags.h" />
+    <ClInclude Include="Source\Resources\ImGui\Include\Ft2build.h" />
+    <ClInclude Include="Source\Resources\ImGui\Internal.hh" />
+    <ClInclude Include="Source\Resources\ImGui\Others\DX9\Impl_DX9.hh" />
+    <ClInclude Include="Source\Resources\ImGui\Others\RectPack.hh" />
+    <ClInclude Include="Source\Resources\ImGui\Others\StdLib\StdLib.hh" />
+    <ClInclude Include="Source\Resources\ImGui\Others\TextEdit.hh" />
+    <ClInclude Include="Source\Resources\ImGui\Others\TrueType.hh" />
+    <ClInclude Include="Source\Resources\ImGui\Others\Win32\Impl_Win32.hh" />
+    <ClInclude Include="Source\Utilities\LazyImporter.hh" />
+    <ClInclude Include="Source\Utilities\Singleton.hh" />
+    <ClInclude Include="Source\Utilities\Utilities.hh" />
+    <ClInclude Include="Source\Utilities\XorStr.hh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Source\Resources\ImGui\Libs\FreeType.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

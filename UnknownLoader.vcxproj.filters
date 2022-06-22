@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\DllMain.cc" />
+    <ClCompile Include="Source\Resources\ImGui\ImGui.cc">
+      <Filter>Resources\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resources\ImGui\Tables.cc">
+      <Filter>Resources\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resources\ImGui\Widgets.cc">
+      <Filter>Resources\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resources\ImGui\Draw.cc">
+      <Filter>Resources\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resources\ImGui\FreeType.cc">
+      <Filter>Resources\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resources\ImGui\Others\StdLib\StdLib.cc">
+      <Filter>Resources\ImGui\Others\StdLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resources\ImGui\Others\Win32\Impl_Win32.cc">
+      <Filter>Resources\ImGui\Others\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resources\ImGui\Others\DX9\Impl_DX9.cc">
+      <Filter>Resources\ImGui\Others\DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Menu\Menu.cc">
+      <Filter>Core\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Menu\CustomImGui\CustomImGui.cc">
+      <Filter>Core\Menu\CustomImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Inject\Inject.cc">
+      <Filter>Core\Inject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\Utilities.cc">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Includes.hh" />
+    <ClInclude Include="Source\DllMain.hh" />
+    <ClInclude Include="Source\Resources\ImGui\FreeType.hh">
+      <Filter>Resources\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\ImConfig.hh">
+      <Filter>Resources\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\ImGui.hh">
+      <Filter>Resources\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Internal.hh">
+      <Filter>Resources\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Others\TextEdit.hh">
+      <Filter>Resources\ImGui\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Others\TrueType.hh">
+      <Filter>Resources\ImGui\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Others\RectPack.hh">
+      <Filter>Resources\ImGui\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Others\StdLib\StdLib.hh">
+      <Filter>Resources\ImGui\Others\StdLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Others\Win32\Impl_Win32.hh">
+      <Filter>Resources\ImGui\Others\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\Ft2build.h">
+      <Filter>Resources\ImGui\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\fterrdef.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\fterrors.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftfntfmt.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftgasp.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftglyph.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftgxval.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftgzip.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftimage.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftincrem.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftlcdfil.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftlist.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftlzw.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftmac.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftmm.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftmodapi.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftmoderr.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftotval.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftoutln.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftparams.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftpfr.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftrender.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftsizes.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftsnames.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftstroke.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftsynth.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftsystem.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\fttrigon.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\fttypes.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftwinfnt.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\t1tables.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ttnameid.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\tttables.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\tttags.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\freetype.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftadvanc.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftbbox.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftbdf.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftbitmap.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftbzip2.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftcache.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftchapters.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftcid.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftcolor.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\ftdriver.h">
+      <Filter>Resources\ImGui\Include\FreeType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftdebug.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftdrv.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftgloadr.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\fthash.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftmemory.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftobjs.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftpsprop.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftrfork.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftserv.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftstream.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\fttrace.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftvalid.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\internal.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\psaux.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\pshints.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\sfnt.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\t1types.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\tttypes.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\wofftypes.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\autohint.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\cffotypes.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\cfftypes.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\ftcalc.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svmetric.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svmm.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svotval.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svpfr.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svpostnm.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svprop.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svpscmap.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svpsinfo.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svsfnt.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svttcmap.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svtteng.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svttglyf.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svwinfnt.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svbdf.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svcfftl.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svcid.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svfntfmt.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svgldict.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svgxval.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Internal\Services\svkern.h">
+      <Filter>Resources\ImGui\Include\FreeType\Internal\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Config\ftoption.h">
+      <Filter>Resources\ImGui\Include\FreeType\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Config\ftstdlib.h">
+      <Filter>Resources\ImGui\Include\FreeType\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Config\ftconfig.h">
+      <Filter>Resources\ImGui\Include\FreeType\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Config\ftheader.h">
+      <Filter>Resources\ImGui\Include\FreeType\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Include\FreeType\Config\ftmodule.h">
+      <Filter>Resources\ImGui\Include\FreeType\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resources\ImGui\Others\DX9\Impl_DX9.hh">
+      <Filter>Resources\ImGui\Others\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Menu\Menu.hh">
+      <Filter>Core\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utilities\Singleton.hh">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utilities\XorStr.hh">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utilities\LazyImporter.hh">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Menu\CustomImGui\CustomImGui.hh">
+      <Filter>Core\Menu\CustomImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Inject\Inject.hh">
+      <Filter>Core\Inject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utilities\Utilities.hh">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{6039a0db-efea-4458-8381-6cce111bf5b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\ImGui">
+      <UniqueIdentifier>{16728bd9-afa5-448e-9d3a-cbae787143f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\ImGui\Others">
+      <UniqueIdentifier>{fcd60cc2-0e55-49d3-8ab3-8aa4eeb50151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\ImGui\Others\Win32">
+      <UniqueIdentifier>{f2221860-6568-484a-937b-fa425a3e63b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\ImGui\Others\StdLib">
+      <UniqueIdentifier>{b9b18500-09ea-4e66-8f31-8a3166787f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\ImGui\Libs">
+      <UniqueIdentifier>{7427d4ad-4406-4c4d-a807-429484785c95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\ImGui\Include">
+      <UniqueIdentifier>{deea736d-68f5-427b-9ea9-f90a59ffb6e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\ImGui\Include\FreeType">
+      <UniqueIdentifier>{86c80522-c941-4af8-a6f9-678adf9d3327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\ImGui\Include\FreeType\Internal">
+      <UniqueIdentifier>{d44a947a-fbaa-418f-8c15-02087492f7db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\ImGui\Include\FreeType\Internal\Services">
+      <UniqueIdentifier>{99af0f85-c488-495e-866c-d824936f372e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\ImGui\Include\FreeType\Config">
+      <UniqueIdentifier>{6e6573c9-1788-4404-b885-86fc81a3cc9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\ImGui\Others\DX9">
+      <UniqueIdentifier>{59828ed1-68b0-4f8b-b7fd-ed5dfc53b034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{95757a3d-52a7-4380-9306-9adba7da4fd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Menu">
+      <UniqueIdentifier>{8d0c09d4-45ca-4812-b79f-03cc4536c5c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{7fd3bbef-9626-4250-bb9d-481e09f02e08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Menu\CustomImGui">
+      <UniqueIdentifier>{5d11ea2e-860e-47de-b46f-e38ae9ad6791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Inject">
+      <UniqueIdentifier>{6698a582-53a0-461c-9b5d-1b7935645d77}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Source\Resources\ImGui\Libs\FreeType.lib">
+      <Filter>Resources\ImGui\Libs</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+</Project>
